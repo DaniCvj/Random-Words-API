@@ -1,4 +1,6 @@
 const express = require("express");
+const logger = require("morgan");
+const cors = require("cors");
 
 const db = {
   words: ["javascript", "python", "php"],
@@ -6,8 +8,14 @@ const db = {
 const app = express();
 
 // Configuration
+// MIDDLEWARES
+app.use(logger("dev"));
+
+app.use(cors());
+
+// CONTROLLERS
 app.get("/hello", (request, response) => {
-  response.send("Hello");
+  response.send({ response: "Hello" });
 });
 
 app.get("/words/random", (request, response) => {

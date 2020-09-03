@@ -6,7 +6,8 @@
   "author": "Daniel Cvjeticanin <danicvj@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "serve": "nodemon index.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
