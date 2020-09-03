@@ -1,0 +1,41 @@
+Arguments: 
+  /home/daniel/n/bin/node /home/daniel/n/bin/yarn start
+
+PATH: 
+  /home/daniel/.vscode-server/bin/a0479759d6e9ea56afa657e454193f72aef85bd0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Daniel/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daniel/AppData/Local/Programs/Microsoft VS Code/bin:/home/daniel/n/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /mnt/c/Users/Daniel/Developer/random-words-express/package.json: Unexpected string in JSON at position 230
+      at JSON.parse (<anonymous>)
+      at /home/daniel/n/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/daniel/n/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/daniel/n/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "random-words-express",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/gabrielheinrich/random-words-express",
+    "author": "Daniel Cvjeticanin <danicvj@gmail.com>",
+    "license": "MIT"
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
